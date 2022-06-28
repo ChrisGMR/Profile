@@ -113,12 +113,13 @@ span{
     border: none;
     font-size: 50px;
 }
-a:hover{
+a.btton:hover{
     background-color: rgb(25, 46, 51);
     border-radius: 20%;
 }
-.zoom:hover{
-    transform:scale(1.5);
+.nohover:hover{
+    background-color: none;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:480px) {
@@ -232,6 +233,10 @@ a:hover{
         background-color: transparent;
         border: none;
         font-size: 25px;
+    }
+    .nohover{
+        pointer-events: none;
+        cursor:pointer;
     }
  
 
